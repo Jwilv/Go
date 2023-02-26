@@ -21,9 +21,13 @@ func main() {
 	fmt.Println(numero1)
 	fmt.Println(numero2)
 
+	//creamos el objeto scanner, con el estandar input que es el teclado
+
 	scanner := bufio.NewScanner(os.Stdin)
 
 	fmt.Println("ingrese el nombre de la operacion")
+
+	//si se escanea algo se guarda en data 
 	if scanner.Scan(){
 		data = scanner.Text()
 	}
