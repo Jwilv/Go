@@ -7,6 +7,13 @@ var numero int
 var cadenaDeTexto string
 var boolean bool
 
+//al declarar el tipo pero no el  valor inicia con el valor por defecto 
+//en caso de int es 0
+//en caso de string es una cadena vacia ""
+//en caso de bool es false 
+//tambien le podemos asignar un valor 
+// ej var numeroTest int = 10
+
 //manera pro
 // numero2 := 1
 
