@@ -33,4 +33,19 @@ func main() {
 
 	fmt.Println("numero correcto")
 
+	//cuarto ejemplo 
+	//pasar a la siguiente iteracion con continue
+
+	a := 0
+	for a < 10{
+		fmt.Printf("\n Valor de a es %d", a)
+		if a == 5{
+			fmt.Printf("     multiplicamos por 2 \n")
+			a = a*2
+			continue  
+		}
+		fmt.Printf("            paso por esta parte de la iteracion \n")
+		a++
+	}
+
 }
