@@ -16,3 +16,13 @@ func uno( numero int) int {
 return numero*2
 }
 
+//en este caso hacemos un return de 2 valores 
+// al ser mas de un tipo a retornar se pone ()
+
+func dos(numero int) (int, bool){
+	if numero == 5{
+		return 10, true 
+	}else{
+		return 0, false 
+	}
+}
