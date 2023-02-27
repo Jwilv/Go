@@ -48,4 +48,21 @@ func main() {
 		a++
 	}
 
+
+	//quinto ejemplo 
+	//usamos el goto para ir al punto de referencia
+	b:=0
+
+	RUTINA:
+	for b<10{
+		if b == 4{
+			b = b+2
+			fmt.Printf("voy a RUTINA sumando 2 a b ")
+			goto RUTINA
+		}
+
+		fmt.Printf("valor de b %d\n",b)
+		b++
+	}
+
 }
