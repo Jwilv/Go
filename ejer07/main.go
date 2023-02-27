@@ -4,6 +4,11 @@ import "fmt"
 
 func main(){
 fmt.Println(uno(5))
+
+//vamos a crear 2 varaibles por que la funcion devuelve 2  valores 
+numero, estado := dos(1)
+println(numero)
+println(estado)
 }
 
 //estructura de una funcion 
