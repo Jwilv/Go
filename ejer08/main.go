@@ -23,6 +23,17 @@ func main() {
 	}
 
 	fmt.Println(Calculo(2,3))
+
+	operacion()
 }
 
 
+func operacion(){
+	resultado := func() int{
+		a, b := 100, 30
+		return a/b
+	}
+
+	fmt.Println("ejemplo 2 ")
+	fmt.Println(resultado())
+}
