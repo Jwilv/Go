@@ -25,6 +25,23 @@ func main() {
 	fmt.Println(Calculo(2, 3))
 
 	operacion()
+
+	fmt.Println("ejemplo closures")
+
+	//lo que pasa aca es que 
+	//a miTabla no se le asigna Tabla, si no que 
+	//se le asigna el valor que esta retorna
+	//en este caso es una funcion, entonces Tabla se ejecuta una vez 
+	//y esta guarda el estado 
+	//por eso secuencia se graba 
+	//por que solo se vuelve a ejecutar lo que retorna 
+
+	miNumero := 5
+	miTabla := Tabla(miNumero)
+
+	for i:=1; i<=10; i++{
+		fmt.Println(miTabla())
+	}
 }
 
 //segundo ejemplo
@@ -40,7 +57,6 @@ func operacion() {
 
 //ejemplo closures
 //creamos una func que no devuelve una func que nos devuelve un int 
-
 func Tabla(valor int) func() int {
 	numero := valor
 	secuencia := 0
