@@ -15,25 +15,37 @@ func main() {
 	fmt.Println("suma de 2 numeros")
 	fmt.Println(Calculo(2, 3))
 
-	//al ser una funcion anonima y estar en una variable 
+	//al ser una funcion anonima y estar en una variable
 	//podemos redefinir la variable con otra funcion
 
-	Calculo = func(num1 int , num2 int) int {
+	Calculo = func(num1 int, num2 int) int {
 		return num1 - num2
 	}
 
-	fmt.Println(Calculo(2,3))
+	fmt.Println(Calculo(2, 3))
 
 	operacion()
 }
 
-
-func operacion(){
-	resultado := func() int{
+//segundo ejemplo
+func operacion() {
+	resultado := func() int {
 		a, b := 100, 30
-		return a/b
+		return a / b
 	}
 
 	fmt.Println("ejemplo 2 ")
 	fmt.Println(resultado())
+}
+
+//ejemplo closures
+//creamos una func que no devuelve una func que nos devuelve un int 
+
+func Tabla(valor int) func() int {
+	numero := valor
+	secuencia := 0
+	return func() int {
+		secuencia+=1
+		return numero*secuencia
+	}
 }
