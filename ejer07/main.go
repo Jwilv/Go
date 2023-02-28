@@ -31,3 +31,13 @@ func dos(numero int) (int, bool){
 		return 0, false 
 	}
 }
+
+//en este caso al typo int de retornamos le asignamos un nombr e
+//en este caso x 
+//en este caso poner un return seria suficiente para que retorne x 
+//que es como una variable de retorno 
+
+func tres(numero int) ( x int){
+	x = numero*3
+	return
+}
