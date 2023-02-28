@@ -15,5 +15,8 @@ func main(){
 	//segunda forma de iniciarlo 
 	fmt.Println("ejemplo 2")
 	tabla2 := [10] int{1,2,3,4,5,6,7,8,9,10}
-	fmt.Println(tabla2)
+	//len no da la longitud del array 
+	for i:=0; i<len(tabla2); i++{
+		fmt.Println(tabla2[i])
+	}
 }
