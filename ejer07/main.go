@@ -9,6 +9,8 @@ func main() {
 	numero, estado := dos(1)
 	println(numero)
 	println(estado)
+	println(cuatro(10,10,10,10,10))
+	println(cuatro(20,20,20,20,20))
 }
 
 //estructura de una funcion
