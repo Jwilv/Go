@@ -36,5 +36,14 @@ func main(){
 	slice := []int{1,2,3,4,5,6,7,8,9,10}
 
 	fmt.Println(slice)
+	variante2()
 
+}
+
+func variante2(){
+	//creamos un arreglo 
+	array1 := [8]int{1,2,3,4,5,6,7,8}
+	//aca le decimos que va a ser igual a el arreglo desde la posision 3 hasta el final
+	slice2 := array1[3:]
+	fmt.Println(slice2)
 }
