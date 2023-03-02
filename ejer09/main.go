@@ -19,4 +19,10 @@ func main(){
 	for i:=0; i<len(tabla2); i++{
 		fmt.Println(tabla2[i])
 	}
+
+	//ejemplo de matrizes 
+	var matrizes  [5][7]int
+	matrizes [2][1] = 57
+	fmt.Println(matrizes)
+
 }
