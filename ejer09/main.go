@@ -56,4 +56,6 @@ func variante3(){
 	//pero si se necesita, puede ser expandido hasta 20 que es el maximo  que le seteamos
 	//en el tercer argumento
 	slice3 := make([]int,5,20)
+	//con len obtenemos el largo, y con cap la capacidad
+	fmt.Printf("largo %d, capacidad %d", len(slice3), cap(slice3))
 }
