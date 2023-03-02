@@ -25,4 +25,16 @@ func main(){
 	matrizes [2][1] = 57
 	fmt.Println(matrizes)
 
+	//ejemplo de slices
+	//cambian en tiempo de ejecucion y se expanden
+	//esto quiere decir que no tienen un valor definido de posiciones
+	//declaramos le nombre y para que sea slice le ponemos un array vacio 
+	//[] seguido del tipo de dato en este caso int 
+	//slice := []int 
+	//ejemplo 2 
+	//en este caso le asignamos un valor inicial
+	slice := []int{1,2,3,4,5,6,7,8,9,10}
+
+	fmt.Println(slice)
+
 }
