@@ -37,7 +37,7 @@ func main(){
 
 	fmt.Println(slice)
 	variante2()
-
+	variante3()
 }
 
 func variante2(){
@@ -46,4 +46,14 @@ func variante2(){
 	//aca le decimos que va a ser igual a el arreglo desde la posision 3 hasta el final
 	slice2 := array1[3:]
 	fmt.Println(slice2)
+}
+
+func variante3(){
+	//en este ejemplo, usamos make para crearlo,
+	//esto nos permite darle como primer parametro el estado inicial
+	//como segunda parametro el largo que va a tener 
+	// y en le tercero es la capacidad maxima, osea que el largo puede ser por ej 5
+	//pero si se necesita, puede ser expandido hasta 20 que es el maximo  que le seteamos
+	//en el tercer argumento
+	slice3 := make([]int,5,20)
 }
