@@ -38,6 +38,7 @@ func main(){
 	fmt.Println(slice)
 	variante2()
 	variante3()
+	variante4()
 }
 
 func variante2(){
@@ -58,4 +59,21 @@ func variante3(){
 	slice3 := make([]int,5,20)
 	//con len obtenemos el largo, y con cap la capacidad
 	fmt.Printf("largo %d, capacidad %d", len(slice3), cap(slice3))
+}
+
+func variante4(){
+	//en este ejemplo lo que pasa es que iniciamos con 0 espacios y 0 capacidad
+	//entonces en este caso el slice esta lleno,
+	//para seguir agregando elemntos
+	//tenemos que usar append
+	//le ponemos que el slice vaa hacer igual a append
+	//este resive como primer parametro el slice original
+	//y como segundo argumento el valor que se requiere grabar
+	//esto permite expandir la capacidad y el espacio 
+	slice4 := make([]int,0,0)
+	for i:=0;i<100;i++{
+		slice4 = append(slice4, i)
+	}
+	
+	fmt.Printf("\n largo %d, capacidad %d", len(slice4), cap(slice4))
 }
