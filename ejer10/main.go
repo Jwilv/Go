@@ -22,7 +22,10 @@ func main() {
 	//le decimos que los index van a ser string y que va a almacenar tipos de datos int
 	//y le cargamos los valores
 	campeonato := map[string]int{
-		"barcelona": 59,
+		"barcelona":   59,
 		"real madrid": 51,
 	}
+	delete(campeonato, "real madrid")
+
+	fmt.Println(campeonato)
 }
