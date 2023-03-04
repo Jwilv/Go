@@ -28,4 +28,8 @@ func main() {
 	delete(campeonato, "real madrid")
 
 	fmt.Println(campeonato)
+
+	for equipo, puntaje := range campeonato{
+		fmt.Printf("\n el equipo %s, tiene %d de puntos", equipo, puntaje)
+	}
 }
