@@ -3,19 +3,16 @@ package main
 import (
 	"fmt"
 	"time"
+
+	user "./user"
 )
 
-//indicamos que va a ser un tipo de structura con el nombre usuario
-type usuario struct{
-	Id        int 
-	Nombre    string
-	FechaAlta time.Time
-	Status    bool
+type juan struct{
+	
 }
-
 func main(){
 	//establecemos un nuevo objeto usuario
-	user := new(usuario)
+	
 }
 
 
