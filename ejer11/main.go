@@ -1,10 +1,9 @@
 package main
 
 import (
+	user "./user"
 	"fmt"
 	"time"
-
-	user "./user"
 )
 
 type juan struct{
@@ -12,8 +11,9 @@ type juan struct{
 }
 func main(){
 	//establecemos un nuevo objeto usuario
-	user := new(juan)
-	user.AltaUsuario(10, "juan", time.Now(), true)
+	u := new(juan)
+	u.AltaUsuario(10, "juan", time.Now(), true)
+	fmt.Println(u.Usuario)
 }
 
 
