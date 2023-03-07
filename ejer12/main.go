@@ -1,6 +1,8 @@
 package main
 
-//interface 
+import "fmt"
+
+//interface
 type humano interface{
 	respirar()
 	comer()
@@ -47,6 +49,11 @@ func (this *mujer) respirar(){ this.respirando = true }
 func (this *mujer) pensar(){ this.pensando = true }
 func (this *mujer) comer(){ this.comiendo = true }
 func (this *mujer) sexo() string{ return "mujer" }
+
+func HumanosRespirando(persona humano){
+persona.respirar()
+fmt.Printf("Soy un/a %s, y estoy respirando \n", persona.sexo())
+}
 
 func main(){
 
