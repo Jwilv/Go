@@ -66,6 +66,14 @@ func animalesRespirando(animal animal){
 	fmt.Println("soy un animal y estoy respirando")
 }
 
+func animalCarnivoro(animal animal) int {
+	if(animal.EsCarnivoro()){
+		return 1 
+	}
+	
+	return 0
+	}
+	
 func main(){
 pedro := new(hombre)
 pedro.esHombre = true 
