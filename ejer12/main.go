@@ -56,5 +56,8 @@ fmt.Printf("Soy un/a %s, y estoy respirando \n", persona.sexo())
 }
 
 func main(){
-
+pedro := new(hombre)
+HumanosRespirando(pedro)
+maria := new(mujer)
+HumanosRespirando(maria)
 }
