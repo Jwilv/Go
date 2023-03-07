@@ -61,6 +61,11 @@ func (this *perro) comer(){ this.comiendo = true }
 func (this *perro) respirar(){this.respirando = true}
 func (this *perro) EsCarnivoro()bool {return this.carnivoro }
 
+func animalesRespirando(animal animal){
+	animal.respirar()
+	fmt.Println("soy un animal y estoy respirando")
+}
+
 func main(){
 pedro := new(hombre)
 pedro.esHombre = true 
