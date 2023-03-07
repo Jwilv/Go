@@ -13,7 +13,9 @@ type animal interface{
 	Escarnivoro() bool
 }
 
-
+type vegetal interface{
+	ClasificacionVegetal() string 
+}
 
 func main(){
 
