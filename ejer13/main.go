@@ -12,7 +12,7 @@ type humano interface{
 type animal interface{
 	respirar()
 	comer()
-	Escarnivoro() bool
+	EsCarnivoro() bool
 }
 
 type vegetal interface{
@@ -48,6 +48,18 @@ func HumanosRespirando(persona humano){
 persona.respirar()
 fmt.Printf("Soy un/a %s, y estoy respirando \n", persona.sexo())
 }
+
+//mundo animal 
+
+type perro struct{
+	comiendo bool 
+	respirando bool 
+	carnivoro bool 
+}
+
+func (this *perro) comer(){ this.comiendo = true }
+func (this *perro) respirar(){this.respirando = true}
+func (this *perro) EsCarnivoro()bool {return this.carnivoro }
 
 func main(){
 pedro := new(hombre)
