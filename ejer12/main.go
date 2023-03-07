@@ -28,6 +28,17 @@ type hombre struct{
 	comiendo bool 
 }
 
+//genero mujer 
+
+type mujer struct{
+	edad int 
+	float float32
+	peso float32
+	respirando bool 
+	pensando bool 
+	comiendo bool 
+}
+
 func main(){
 
 }
