@@ -7,6 +7,13 @@ type humano interface{
 	pensar()
 	sexo() string
 }
+type animal interface{
+	respirar()
+	comer()
+	Escarnivoro() bool
+}
+
+
 
 func main(){
 
