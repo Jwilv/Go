@@ -3,11 +3,16 @@ package main
 import "fmt"
 
 //interface
+
+type serVivo interface{
+	vivo() bool
+}
 type humano interface {
 	respirar()
 	comer()
 	pensar()
 	sexo() string
+	vivo() bool
 }
 type animal interface {
 	respirar()
@@ -28,6 +33,7 @@ type hombre struct {
 	pensando   bool
 	comiendo   bool
 	esHombre   bool
+	viviendo bool 
 }
 
 func (this *hombre) respirar() { this.respirando = true }
@@ -38,6 +44,9 @@ func (this *hombre) sexo() string {
 		return "hombre"
 	}
 	return "mujer"
+}
+func (this *hombre) vivo()bool{
+	return true
 }
 
 //genero mujer
@@ -57,11 +66,13 @@ type perro struct {
 	comiendo   bool
 	respirando bool
 	carnivoro  bool
+	viviendo bool 
 }
 
 func (this *perro) comer()            { this.comiendo = true }
 func (this *perro) respirar()         { this.respirando = true }
 func (this *perro) EsCarnivoro() bool { return this.carnivoro }
+func (this *perro) vivo() bool { return true }
 
 func animalesRespirando(animal animal) {
 	animal.respirar()
