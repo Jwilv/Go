@@ -1,1 +1,4 @@
 hola soy el archivo de texto
+linea 2 
+jeje 3 
+hola 4 
