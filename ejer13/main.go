@@ -82,4 +82,7 @@ func main() {
 	HumanosRespirando(pedro)
 	maria := new(mujer)
 	HumanosRespirando(maria)
+	rocco := new(perro)
+	animalesRespirando(rocco)
+	fmt.Println(animalCarnivoro(rocco))
 }
