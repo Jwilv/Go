@@ -18,6 +18,7 @@ type animal interface {
 	respirar()
 	comer()
 	EsCarnivoro() bool
+	vivo() bool
 }
 
 type vegetal interface {
@@ -87,6 +88,10 @@ func animalCarnivoro(animal animal) int {
 	return 0
 }
 
+func estoyVivo(ser serVivo)bool{
+return ser.vivo()
+}
+
 func main() {
 	pedro := new(hombre)
 	pedro.esHombre = true
@@ -96,4 +101,7 @@ func main() {
 	rocco := new(perro)
 	animalesRespirando(rocco)
 	fmt.Println(animalCarnivoro(rocco))
+	fmt.Println(estoyVivo(pedro))
+	fmt.Println(estoyVivo(maria))
+	fmt.Println(estoyVivo(rocco))
 }
