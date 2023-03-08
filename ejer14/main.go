@@ -25,6 +25,7 @@ func leoArchivo2(){
 		registro := scanner.Text()
 		fmt.Printf("linea > "+ registro+ "\n" )
 	}
+	archivo.Close()
 }
 
 func main(){
