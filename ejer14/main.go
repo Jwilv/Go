@@ -49,6 +49,7 @@ func Append(archivo string, texto string) bool{
 	_, errorWrite := arch.WriteString(texto)
 	if errorWrite != nil{
 		fmt.Println("error al modificar archivo")
+		return false
 	}
 	fmt.Println("modificado con exito")
 	return true 
