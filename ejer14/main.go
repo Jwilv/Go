@@ -50,7 +50,8 @@ func Append(archivo string, texto string) bool{
 	if errorWrite != nil{
 		fmt.Println("error al modificar archivo")
 	}
-
+	fmt.Println("modificado con exito")
+	return true 
 	}
 
 func grabarArchivo2(){
