@@ -42,6 +42,10 @@ func grabarArchivo(){
 
 func Append(archivo string, texto string) bool{
 	arch, errorOpen := os.OpenFile(archivo, os.O_WRONLY | os.O_APPEND, 0644)
+	if errorOpen != nil {
+		fmt.Println("Error en append al abrir archivo")
+		return false
+	}
 
 	}
 
