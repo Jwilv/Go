@@ -27,8 +27,22 @@ func leoArchivo2(){
 	}
 	archivo.Close()
 }
+func grabarArchivo(){
+	archivo, err := os.Create("./nuevoArchivo.txt")
+	if err != nil{
+		fmt.Println("error en archivo")
+		return
+	}
+	//con Fprint guardamos el string en una variable, en este caso en el archivo 
+	fmt.Fprintln(archivo, "linea nueva")
+	archivo.Close()
+	fmt.Println("se grabo la linea")
+	return 
+}
+
 
 func main(){
 	leoArchivo()
 	leoArchivo2()
+	grabarArchivo()
 }
