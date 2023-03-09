@@ -40,7 +40,10 @@ func grabarArchivo(){
 	return 
 }
 
+func Append(archivo string, texto string) bool{
+	arch, errorOpen := os.OpenFile(archivo, os.O_WRONLY | os.O_APPEND, 0644)
 
+	}
 
 func grabarArchivo2(){
 fileName := "./nuevoArchivo.txt"
