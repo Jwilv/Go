@@ -41,8 +41,18 @@ func grabarArchivo(){
 }
 
 
+
+func grabarArchivo2(){
+fileName := "./nuevoArchivo.txt"
+if Append(fileName, "\n que onda, linea agregada") == false{
+	fmt.Println("error al modificar archivo")
+}
+}
+
+
 func main(){
 	leoArchivo()
 	leoArchivo2()
 	grabarArchivo()
+	grabarArchivo2()
 }
