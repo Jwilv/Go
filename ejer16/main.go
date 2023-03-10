@@ -7,7 +7,7 @@ import (
 	"log"
 )
 func main(){
-//defer se ejecuta cuando salga de la funcion
+//defer se ejecuta recien cuando salga de la funcion
 archivo := "archivoFantasma.txt"
 file, err := os.Open(archivo)
 defer file.Close()
