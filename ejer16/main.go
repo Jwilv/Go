@@ -7,6 +7,13 @@ import (
 	"os"
 )
 
+func ejemPanic(){
+a:=1
+if a==1{
+	panic("se encontro el valor")
+}
+}
+
 func main() {
 	//defer se ejecuta recien cuando salga de la funcion
 	archivo := "archivoFantasma.txt"
