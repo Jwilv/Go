@@ -2,12 +2,21 @@ package main
 
 import (
 	"fmt"
+	"log"
 	// "io/ioutil"
 	// "log"
 	"os"
 )
 
 func ejemPanic(){
+	//funcio anonima para defer, por que defer solo ejecuta una sola cosa
+	defer func(){
+		//recover lee el ultimo panic
+		reco := recover()
+		if reco != nil{
+			log.Fatalf("ocurrio un error que genero un panic \n %v",reco)
+		}
+	}()
 a:=1
 if a==1{
 	//aborta el programa
