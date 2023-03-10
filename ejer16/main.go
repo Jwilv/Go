@@ -2,14 +2,15 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
-	"log"
+	// "io/ioutil"
+	// "log"
 	"os"
 )
 
 func ejemPanic(){
 a:=1
 if a==1{
+	//aborta el programa
 	panic("se encontro el valor")
 }
 }
@@ -27,4 +28,5 @@ func ejemDefer(){
 
 func main() {
 	//ejemDefer()
+	ejemPanic()
 }
