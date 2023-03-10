@@ -15,5 +15,11 @@ for _, letra := range letras{
 }
 
 func main(){
-	nombreLento("wilvers")
+	//se ejecuta de forma asincrona 
+	//como si fuera en paralelo 
+	//pero cuando termina el programa go no espera a que se termine de ejecutar 
+	go nombreLento("wilvers")
+	fmt.Println("estoy aca ")
+	var x string
+	fmt.Scanln(&x)
 }
