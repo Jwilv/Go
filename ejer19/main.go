@@ -9,6 +9,8 @@ func home(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	//server en el puento 3000
+	http.ListenAndServe(":3000", nil)
 	//ruta principal
-http.HandleFunc("/", home)
+	http.HandleFunc("/", home)
 }
