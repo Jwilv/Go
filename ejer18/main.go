@@ -8,7 +8,7 @@ import (
 //le decimos que el argumento canal va a ser un chan de tipo time.Duration
 func bucle(canal chan time.Duration){
 	inicio := time.Now()
-	for i:=0;i<10000000000;i++{
+	for i:=0;i<1000000000;i++{
 
 	}
 	final := time.Now()
@@ -21,5 +21,10 @@ func main() {
 	//vamos a crear un chan = chanel/canal
 	//de tipo time.Duration
 	canal1 := make(chan time.Duration)
+	go bucle(canal1)
 	fmt.Printf("llegue al final")
+	// esto es como el await, todo se para hasta que canal1 
+	//tenga gun valor y se guarde en msg
+	msg := <- canal1
+	fmt.Println(msg)
 }
