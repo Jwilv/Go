@@ -9,5 +9,6 @@ func home(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-
+	//ruta principal
+http.HandleFunc("/", home)
 }
