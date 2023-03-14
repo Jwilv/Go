@@ -13,3 +13,7 @@ func suma(a, b int) int {
 func resta(a, b int) int {
 	return a - b
 }
+
+func multiplicacion(a, b int) int {
+	return a * b
+}
